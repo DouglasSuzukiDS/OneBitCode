@@ -1,0 +1,78 @@
+# 30 Desafios JavaScript 🚀
+
+Coleção de desafios de **Javascript** desenvolvida pela [**OneBitCode**](https://onebitcode.com/).
+
+Uma jornada prática por lógica de programação, estruturas de dados, orientação a objetos e manipulação de arquivos, organizada por nível de dificuldade.
+
+## Progresso
+
+| Nível | Desafios |
+| :--- | :---: |
+| 🌱 Very Easy | 01–06 |
+| 🟢 Easy | 07–14 |
+| 🟡 Medium | 15–22 |
+| 🟠 Hard | 23–28 |
+| 🔴 Very Hard | 29–30 |
+
+## Índice
+
+- 🌱 [Very Easy](#very-easy)
+- 🟢 [Easy](#easy)
+- 🟡 [Medium](#medium)
+- 🟠 [Hard](#hard)
+- 🔴 [Very Hard](#very-hard)
+
+## Very Easy 🌱
+
+| Desafio | Título | Conceitos |
+| :---: | :--- | :--- |
+| **01** | 🏋️ Ajudando a Academia | Arrays, Matemática |
+| **02** | 🔁 Procedimento Recursivo I | Recursão, Strings |
+| **03** | 🚫 Linguagem Limitada | Arrays, Estruturas Básicas |
+| **04** | 🚀 Cálculos de Viagens Espaciais I | Matemática, Manipulação de Tipos |
+| **05** | 🕵️ História Escondida I | Strings, Arrays |
+| **06** | 🗝️ História Escondida II | Strings, Arrays |
+
+## Easy 🟢
+
+| Desafio | Título | Conceitos |
+| :---: | :--- | :--- |
+| **07** | 📊 Organizando Resultados | Arrays |
+| **08** | 📚 Biblioteca Interplanetária | Strings |
+| **09** | 🚨 Instruções de Emergência | Strings |
+| **10** | 🔄 Procedimento Recursivo II | Recursão, Matemática |
+| **11** | 📍 Intervalo de Coordenadas | Arrays |
+| **12** | 🛸 Espaçoporto Comercial | Matemática |
+| **13** | 🪪 Código de Identificação de Nave | Strings, Matemática |
+| **14** | 🛫 Licença de Voo | Strings, Classes, Datas |
+
+## Medium 🟡
+
+| Desafio | Título | Conceitos |
+| :---: | :--- | :--- |
+| **15** | 🏛️ Código Romano I | Matemática, Manipulação de Tipos |
+| **16** | 🏺 Código Romano II | Matemática, Manipulação de Tipos, Strings |
+| **17** | 📋 Relatório de Missão | Strings, Arrays |
+| **18** | 🎯 Módulo de Treinamento | Classes, Matemática |
+| **19** | 🌌 Cálculos de Viagens Espaciais II | Matemática, Recursão |
+| **20** | 🔐 Quebrando a Senha | Recursão, Arrays |
+| **21** | 🧭 Sistema de Localização | Matemática, Classes, Estruturas Básicas |
+| **22** | 🔒 Prisão Intergalática | Strings, Manipulação de Tipos |
+
+## Hard 🟠
+
+| Desafio | Título | Conceitos |
+| :---: | :--- | :--- |
+| **23** | 🏎️ Corrida de Pods | Strings, Arrays |
+| **24** | 👤 Validações de Usuário | Strings, RegEx |
+| **25** | 🧪 Validações de Compilador | Strings |
+| **26** | ⚙️ Otimização de Cálculos | Matemática, Recursão |
+| **27** | 🔗 Encontrando Conexões | Recursão, Objetos, Arrays |
+| **28** | 🎮 Hora de Jogar | Classes, Objetos, Arrays, Matemática |
+
+## Very Hard 🔴
+
+| Desafio | Título | Conceitos |
+| :---: | :--- | :--- |
+| **29** | 🧱 Labirintos Subterrâneos | Arrays, Classes, Estruturas de Dados |
+| **30** | 📑 Planilha Portátil | Manipulação de Arquivos, Matemática, Arrays, Strings, Classes, Promises |
