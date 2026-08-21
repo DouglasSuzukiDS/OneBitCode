@@ -1,8 +1,10 @@
-# 🚀 Cursos OneBitCode
+# 🤘 Cursos OneBitCode 🤘
 
 > Repositório dedicado aos meus estudos, exercícios, projetos e práticas desenvolvidos durante os cursos e formações realizados na **OneBitCode**.
 
 🌐 **Plataforma:** [**OneBitCode**](https://onebitcode.com/)
+
+🔗 [Conheça o combo Dev IA](https://onebitcode.com/combodevia)
 
 ---
 
@@ -10,13 +12,11 @@
 
 Este repositório contém os códigos, exercícios e projetos desenvolvidos durante as formações e cursos que realizei na **OneBitCode**.
 
-O objetivo não é apenas armazenar os códigos, mas também manter um histórico da minha evolução e das tecnologias estudadas ao longo do tempo.
-
 ---
 
 ## 🎓 Cursos e Formações
 
-### 🟨 Formação Full Stack JavaScript
+### 🟨 Formação Fullstack Javascript
 
 > Desenvolvimento Front-end e Back-end utilizando o ecossistema JavaScript.
 
@@ -36,7 +36,7 @@ O objetivo não é apenas armazenar os códigos, mas também manter um históric
 - Deploy
 - Inteligência Artificial
 
-📁 **Diretório:** `./fullstack-javascript`
+📁 **Diretório:** `./fullstack` (*futuramente*)
 
 🔗 [Conhecer a formação](https://onebitcode.com/javascript)
 
@@ -59,6 +59,8 @@ O objetivo não é apenas armazenar os códigos, mas também manter um históric
 
 📁 **Diretório:** `./python`
 
+🔗 [Conhecer a formação](https://onebitcode.com/python)
+
 ---
 
 ### 💎 Formação Ruby on Rails
@@ -75,7 +77,9 @@ O objetivo não é apenas armazenar os códigos, mas também manter um históric
 - Desenvolvimento Web
 - Deploy
 
-📁 **Diretório:** `./ruby`
+📁 **Diretório:** `./ruby` (*futuramente*)
+
+🔗 [Conhecer a formação](https://onebitcode.com/ruby)
 
 ---
 
@@ -94,7 +98,7 @@ O objetivo não é apenas armazenar os códigos, mas também manter um históric
 - Agentes de IA
 - Automação de processos
 
-📁 **Diretório:** `./automacoes`
+📁 **Diretório:** `./automacoes` (*futuramente*)
 
 ---
 
@@ -114,7 +118,9 @@ O objetivo não é apenas armazenar os códigos, mas também manter um históric
 - Testes
 - Integração com aplicações
 
-📁 **Diretório:** `./ia`
+📁 **Diretório:** `./ia` (*futuramente*)
+
+🔗 [Conhecer a formação](https://onebitcode.com/n8n)
 
 ---
 
@@ -134,24 +140,7 @@ O objetivo não é apenas armazenar os códigos, mas também manter um históric
 
 📁 **Diretório:** `./mobile`
 
----
-
-### 💼 Dev Freelancer
-
-> Conteúdos relacionados ao desenvolvimento de projetos como freelancer.
-
-**Conteúdos:**
-
-- Prospecção
-- Precificação
-- Propostas
-- Contratos
-- Negociação
-- Organização de projetos
-- Entrega de projetos
-- Relacionamento com clientes
-
-📁 **Diretório:** `./freelancer`
+🔗 [Conhecer a formação](https://onebitcode.com/mobile)
 
 ---
 
@@ -164,7 +153,7 @@ Cada desafio possui seu próprio diretório contendo a solução e o enunciado.
 **Exemplo:**
 
 ```text
-30-desafios-javascript/
+30DesafiosJS/
 │
 ├── ex01/
 │   └── index.js
@@ -173,24 +162,29 @@ Cada desafio possui seu próprio diretório contendo a solução e o enunciado.
 │   └── index.js
 │
 └── ex30/
-    └── index.js
+    └── index.js 
+```
 
-📁 Diretório: ./30-desafios-javascript
+📁 Diretório: ./30DesafiosJS
 
+🔗 [Conhecer a formação](https://onebitcode.com/javascript?sck=js)
 
-🟢 Em andamento
-   Formação Python
-   30 Desafios de JavaScript
+---
+
+# 📈 Status
+
+🟢 Em andamento:
+   - Formação Python
+   - 30 Desafios de JavaScript
 
 🟡 A fazer
-   Formação Full Stack JavaScript
-   Formação Python
-   Formação Ruby on Rails
-   Automações
-   Inteligência Artificial
-   Mobile
-   Dev Freelancer
-   30 Desafios de JavaScript
+   - Formação Full Stack JavaScript
+   - Formação Python
+   - Formação Ruby on Rails
+   - Automações
+   - Inteligência Artificial
+   - Mobile
+   - Dev Freelancer
 
 ✅ Concluídos
  

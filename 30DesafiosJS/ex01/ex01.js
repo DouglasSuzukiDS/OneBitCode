@@ -7,41 +7,25 @@ Escreva uma função que recebe um número qualquer de números inteiros como ar
 ***ENTRADA:***
 
 * (10, 9, 6, 8, 9, 1, 5, 7)**
-
-
 * (2, 5, 7, 1, -2)**
-
-
 * (10, 10, 10, 10, 9)**
-
-
 * (25, 75)**
-
-
 
 ***SAÍDA:***
 
 * 6.875
-
-
 * 2.6
-
-
 * 9.8
-
-
 * 50
-
-
-
----
-
-**
 */
 
+const avg = (...numbers) => {
+   const sum = numbers.reduce((acc, curr) => acc + curr, 0)
 
-// ========================================
-// SOLUÇÃO
-// ========================================
+   return sum / numbers.length
+}
 
-
+console.log(avg(10, 9, 6, 8, 9, 1, 5, 7)) // 6.875
+console.log(avg(2, 5, 7, 1, -2)) // 2.6
+console.log(avg(10, 10, 10, 10, 9)) // 9.8
+console.log(avg(25, 75)) // 50
