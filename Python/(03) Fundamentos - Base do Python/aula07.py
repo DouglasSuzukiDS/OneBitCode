@@ -98,7 +98,7 @@ def ex03():
    print(f'Quantidade de letras: {nameLength}')
    print(f'Primeiras 3: {firstTreeLetters}')
    print(f'Últimas 3: {lastTreeLetters}')
-   print(f'om underscore: {withUnderscore}')
+   print(f'Com underscore: {withUnderscore}')
 
 ex03()
 
