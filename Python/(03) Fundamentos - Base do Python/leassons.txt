@@ -1,3 +1,5 @@
+(03) Fundamentos - Base do Python
+
 Aula 01 - Variáveis e tipos de dados
 Aula 02 - Lendo dados com input e concatenando valores
 Aula 03 - Operadores aritméticos e relacionais
