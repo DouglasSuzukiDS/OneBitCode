@@ -1,3 +1,5 @@
+(07) Organizacoes e Classes - Base do Python
+
 Aula01 - Módulos e pacotes
 Aula02 - Módulos built-in (parte 1)
 Aula03 - Módulos built-in (parte 2)

@@ -1,3 +1,5 @@
+(06) Funcoes - Base do Python
+
 Aula01 - Funções: criando e reutilizando código
 Aula02 - Argumentos avançados: *args e kwargs
 Aula03 - Funções recursivas
