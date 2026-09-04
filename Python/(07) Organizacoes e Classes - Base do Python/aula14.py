@@ -108,7 +108,7 @@ class Biblioteca:
 
       print(
          f'{self.nome}\n'
-         f'{listas_livros_formatados}\n'
+         f'{listas_livros_formatados}'
       )
 
    def buscar_livro(self, titulo):
@@ -133,6 +133,8 @@ def ex02():
 print('\n------------------------------------------------------------\n')
 
 ex02()
+
+print('\n------------------------------------------------------------\n')
 
 '''
    Problema 3: Sistema de tarefas
@@ -171,8 +173,64 @@ ex02()
       lista.listar_concluidas()
       # 1. [X] Estudar Python
 '''
+
+class Tarefa:
+   def __init__(self, descricao):
+      self.descricao = descricao
+      self.concluido = False
+
+   def marcar_concluida(self):
+      self.concluido = True
+
+   def exibir(self):
+      status = '[x]' if self.concluido else '[ ]'
+      return f'{status} {self.descricao}'
+      
+class ListaTarefas():
+   def __init__(self):
+      self.tarefas = []
+
+   def adicionar(self, descricao):
+      adc_tarefa = Tarefa(descricao)
+      self.tarefas.append(adc_tarefa)
+
+   def listar_todas(self):
+      for i, tarefa in enumerate(self.tarefas):
+         print(f'{i + 1}. {tarefa.exibir()}')
+
+   def listar_pendentes(self):
+      # for i, tarefa in enumerate(self.tarefas, start = 1):
+      #    if not tarefa.concluido:
+      #       tarefa.exibir(i)
+      [print(f'{i + 1}. {tarefa.exibir()}') for i, tarefa in enumerate(self.tarefas) if not tarefa.concluido]
+      
+   def listar_concluidas(self):
+      # for i,tarefa in enumerate(self.tarefas, start = 1):
+      #    if tarefa.concluido:
+      #       tarefa.exibir(i)
+      [print(f'{i + 1}. {tarefa.exibir()}') for i, tarefa in enumerate(self.tarefas) if tarefa.concluido]
+
+   def marcar_concluida(self, indice):
+      index = indice - 1
+      self.tarefas[index].marcar_concluida()
+
+      
 def ex03():
-   pass
+   lista = ListaTarefas()
+   lista.adicionar("Estudar Python")
+   lista.adicionar("Fazer exercícios")
+   lista.adicionar("Revisar aula")
+
+   lista.listar_todas()
+   print('---')
+
+   lista.marcar_concluida(1)
+   lista.listar_pendentes()
+   print('---')
+
+   lista.listar_concluidas()
+
+ex03()
 
 '''
    Dificuldades?
