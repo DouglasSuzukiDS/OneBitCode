@@ -1,4 +1,7 @@
 # Aula05 - Resolução: validador de dados | testes
+import re
+import pytest
+
 '''
    Problema 1: Validador de dados
       Enunciado:
@@ -14,8 +17,42 @@
          validar_senha("abc")  # ValueError: Senha muito curta
          validar_senha("senha123")  # OK (retorna None)
 '''
+
+def validar_idade(idade):
+   if idade < 0 or idade > 150:
+      raise ValueError(f'A idade precisa ser maior que 0 e menor que 150 anos')
+
+   print('Idade valida')
+
+def validar_senha(senha):
+   caracter_regex = r'[a-zA-Z]{1}'
+   numero_regex = r'\d'
+
+   if len(senha) < 8:
+      raise ValueError('A senha precisa conter pelo menos 8 caracteres, com pelo menos 1 letra e 1 numero')
+
+   if not (re.search(caracter_regex, senha).group()):
+      raise ValueError('A senha precisa ter ao menos 1 letra')
+
+   if not (re.search(numero_regex, senha).group()):
+      raise ValueError('A senha precisa ter ao menos 1 numero')
+
 def ex01():
-   pass
+   testes = [
+      lambda: validar_idade(25),  # OK (retorna None)
+      lambda: validar_idade(-5),  # ValueError
+
+      lambda: validar_senha("abc"),  # ValueError: Senha muito curta
+      lambda: validar_senha("senha123"),  # OK (retorna None)
+   ]
+
+   for teste in testes:
+      try:
+         teste()
+      except ValueError as error:
+         print(f'Error: {error}')
+
+ex01()
 
 '''
    Problema 2: Testes unitários com pytest
@@ -38,8 +75,7 @@ def ex01():
                validar_idade(-5)
 '''
 
-def ex02():
-   pass
+# Os testes unitários estão no arquivo test_aula05.py
 
 '''
    Dificuldades?
