@@ -1,6 +1,8 @@
 # Aula04 - Resolução: processador de arquivos | consultor de API
 import csv
 import requests
+import json
+from datetime import datetime
 
 '''
 Problema 1: Processador de CSV
@@ -56,7 +58,9 @@ def ex01():
 
             print(f'---------- Fim do arquivo {arquivo_csv} ----------\n') if print_item else ''
 
-         return items 
+         return items
+      except FileNotFoundError:
+         print(f'Nao foi possivel encontrar o arquivo {arquivo_csv}') 
       except:
          print(f'Nao foi possivel ler arquivo {arquivo_csv}')
 
@@ -86,17 +90,15 @@ def ex01():
             writer.writerows(dados)
 
          print(f'Dados escritos no arquivo {nome_arquivo}\n')
-      except FileNotFoundError:
-         print(f'Nao foi possivel encontrar o arquivo {nome_csv}')
       except Exception as error:
          print(f'Erro escrever no arquivo csv {nome_arquivo}: {error}\n')
 
-   # escrever_csv(produtos, dados)
+   escrever_csv(produtos, dados)
    escrever_csv(produtos_totais, calcular_totais(produtos))
 
-   # ler_csv(produtos)
+   ler_csv(produtos)
    ler_csv(produtos_totais)
-ex01()
+# ex01()
 
 '''
    Problema 2: Consultor de API de cotação
@@ -122,9 +124,47 @@ ex01()
 '''
 
 def ex02():
-   pass
+   def obter_cotacoes():
+      api = 'https://api.exchangerate-api.com/v4/latest/BRL'
 
-# ex02()
+      response = requests.get(api)
+
+      data = response.json()
+      
+      return data['rates']
+
+   def salvar_json():
+      data = obter_cotacoes()
+      date_now = datetime.now().isoformat()
+      contacoes = 'cotacoes.json'
+      
+      infos = {
+         "timestamp": date_now,
+         "moeda_base": "BRL",
+         "taxas": {
+            "USD": f'{data['USD']:.2f}',
+            "EUR": f'{data['EUR']:.2f}',
+            "GBP": f'{data['GBP']:.2f}'
+         }
+      }
+
+      with open(contacoes, 'w', encoding='utf-8') as arquivo:
+         data = json.dump(infos, arquivo, indent=4, ensure_ascii=False)
+
+   def ler_json(arquivo_json):
+      try:
+         with open(arquivo_json, 'r', encoding='utf-8') as arquivo:
+            cotacao = json.load(arquivo)
+
+            print(cotacao)
+      except FileNotFoundError:
+         print(f'Nao foi possivel encontrar o arquivo {arquivo_json}')
+      except Exception as error:
+         print(f'Nao foi possivel ler arquivo {arquivo_json}')
+
+   salvar_json()
+   ler_json('cotacoes.json')
+ex02()
 
 '''
    Dificuldades?
