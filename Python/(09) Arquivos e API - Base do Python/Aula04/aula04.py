@@ -1,8 +1,7 @@
 # Aula04 - Resolução: processador de arquivos | consultor de API
-import csv
-import requests
-import json
-from datetime import datetime
+
+from aula04_ex01 import escrever_csv, calcular_totais, ler_csv
+from aula04_ex02 import salvar_json, ler_json
 
 '''
 Problema 1: Processador de CSV
@@ -25,6 +24,7 @@ Problema 1: Processador de CSV
          Mouse,50,10,500
          Teclado,150,5,750
 '''
+
 def ex01():
    produtos = 'produtos.csv'
    produtos_totais = 'produtos_totais.csv'
@@ -36,69 +36,13 @@ def ex01():
       ['Teclado',150,5]
    ]
 
-   dados_totais = [
-      ['nome','preco','quantidade', 'total']
-   ]
-
-   def ler_csv(arquivo_csv, print_item = True):
-      items = []
-
-      try:
-         with open(arquivo_csv, 'r', encoding='utf-8') as arquivo:
-            reader = csv.reader(arquivo)
-            # next(reader, None)  # Pula o cabeçalho (nome, preco, quantidade)
-
-            print(f'---------- Arquivo {arquivo_csv} ----------') if print_item else ''
-
-            for item in reader:
-               items.append(item)
-
-               if print_item:
-                  print(item)
-
-            print(f'---------- Fim do arquivo {arquivo_csv} ----------\n') if print_item else ''
-
-         return items
-      except FileNotFoundError:
-         print(f'Nao foi possivel encontrar o arquivo {arquivo_csv}') 
-      except:
-         print(f'Nao foi possivel ler arquivo {arquivo_csv}')
-
-   def calcular_totais(arquivo_csv):
-      try:
-         items = ler_csv(arquivo_csv, False)
-         for item in items:
-            if not item or item[0] == 'nome':  # Pula linhas vazias ou cabeçalhos que tenham sobrado
-               continue
-
-            total = float(item[1]) * float(item[2])
-
-            dados_totais.append([*item, total])
-
-         return dados_totais
-      except FileNotFoundError:
-         print(f'Nao foi possivel encontrar o arquivo {arquivo_csv}')
-      except Exception as error:
-         print(f'Erro ao processar os dados do arquivo {arquivo_csv}: {error}')
-
-   def escrever_csv(nome_csv, dados):
-      nome_arquivo = f'{nome_csv}'
-
-      try:
-         with open(nome_arquivo, 'w', newline='', encoding='utf-8') as arquivo:
-            writer = csv.writer(arquivo)
-            writer.writerows(dados)
-
-         print(f'Dados escritos no arquivo {nome_arquivo}\n')
-      except Exception as error:
-         print(f'Erro escrever no arquivo csv {nome_arquivo}: {error}\n')
-
    escrever_csv(produtos, dados)
    escrever_csv(produtos_totais, calcular_totais(produtos))
 
    ler_csv(produtos)
    ler_csv(produtos_totais)
-# ex01()
+
+ex01()
 
 '''
    Problema 2: Consultor de API de cotação
@@ -124,46 +68,9 @@ def ex01():
 '''
 
 def ex02():
-   def obter_cotacoes():
-      api = 'https://api.exchangerate-api.com/v4/latest/BRL'
-
-      response = requests.get(api)
-
-      data = response.json()
-      
-      return data['rates']
-
-   def salvar_json():
-      data = obter_cotacoes()
-      date_now = datetime.now().isoformat()
-      contacoes = 'cotacoes.json'
-      
-      infos = {
-         "timestamp": date_now,
-         "moeda_base": "BRL",
-         "taxas": {
-            "USD": f'{data['USD']:.2f}',
-            "EUR": f'{data['EUR']:.2f}',
-            "GBP": f'{data['GBP']:.2f}'
-         }
-      }
-
-      with open(contacoes, 'w', encoding='utf-8') as arquivo:
-         data = json.dump(infos, arquivo, indent=4, ensure_ascii=False)
-
-   def ler_json(arquivo_json):
-      try:
-         with open(arquivo_json, 'r', encoding='utf-8') as arquivo:
-            cotacao = json.load(arquivo)
-
-            print(cotacao)
-      except FileNotFoundError:
-         print(f'Nao foi possivel encontrar o arquivo {arquivo_json}')
-      except Exception as error:
-         print(f'Nao foi possivel ler arquivo {arquivo_json}')
-
    salvar_json()
    ler_json('cotacoes.json')
+   
 ex02()
 
 '''
