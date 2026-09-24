@@ -1,0 +1,30 @@
+(11) Banco de dados SQL
+
+Aula01 - Introdução do Módulo
+Aula02 - O que são Bancos de Dados
+Aula03 - Instalando o PostgreSQL (Windows)
+Aula04 - Instalando o PostgreSQL (Linux)
+Aula05 - Conhecendo a Linguagem SQL
+Aula06 - Tipos de Dados
+Aula07 - Criando Bancos de Dados e Tabelas (DDL)
+Aula08 - Exercício 1: Criação de Tabelas
+Aula09 - Resolução do Exercício 1
+Aula10 - Inserindo Linhas em uma Tabela
+Aula11 - Consultando Linhas de uma Tabela
+Aula12 - Comandos Avançados de Consulta
+Aula13 - Exercício 2: Consultando Dados
+Aula14 - Resolução do Exercício 2
+Aula15 - Atualização e Exclusão de Linhas
+Aula16 - Trabalhando com Backup e Restauração
+Aula17 - Relacionamentos Entre Tabelas
+Aula18 - Relacionamentos 1:1 e 1:n
+Aula19 - Relacionamentos n:n
+Aula20 - Integridade Referencial
+Aula21 - Exercício 3: Tabelas Relacionadas
+Aula22 - Resolução do Exercício 3
+Aula23 - Introdução à Modelagem de Bancos de Dados
+Aula24 - Modelando um Banco de Dados - I
+Aula25 - Modelando um Banco de Dados - II
+Aula26 - Exercício 4: Modelando um BD Completo
+Aula27 - Resolução do Exercício 4
+Aula28 - Encerramento
