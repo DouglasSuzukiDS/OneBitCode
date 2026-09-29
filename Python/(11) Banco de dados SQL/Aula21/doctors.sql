@@ -5,8 +5,8 @@ CREATE TABLE doctors (
    name VARCHAR(255) NOT NULL,
    phone VARCHAR(15) NOT NULL,
    
-   specialties_id INT, 
-   FOREIGN KEY (specialties_id) REFERENCES specialties (id)
+   specialtie_id INT, 
+   FOREIGN KEY (specialtie_id) REFERENCES specialties (id)
 );
 
 INSERT INTO doctors (name, phone, specialties_id) VALUES
@@ -21,6 +21,12 @@ INSERT INTO doctors (name, phone, specialties_id) VALUES
    ('Charles McNider', '(11) 91111-9999', 7), 
    ('Curt Connors', '(11) 90000-0000', 5);
 
--- Obter todas as consultas de um determinado médico, incluindo informações dos pacientes e observações.
-
 -- Obter todos os médicos com suas respectivas especializações.
+SELECT 
+   d.id,
+   d.name,
+   d.phone,
+
+   s.name as speciealty 
+FROM doctors d
+JOIN specialties s ON d.specialtie_id = s.id;
