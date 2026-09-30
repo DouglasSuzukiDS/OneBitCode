@@ -21,12 +21,3 @@ INSERT INTO doctors (name, phone, specialties_id) VALUES
    ('Charles McNider', '(11) 91111-9999', 7), 
    ('Curt Connors', '(11) 90000-0000', 5);
 
--- Obter todos os médicos com suas respectivas especializações.
-SELECT 
-   d.id,
-   d.name,
-   d.phone,
-
-   s.name as speciealty 
-FROM doctors d
-JOIN specialties s ON d.specialtie_id = s.id;
