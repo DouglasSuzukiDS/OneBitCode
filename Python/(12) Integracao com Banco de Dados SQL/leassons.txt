@@ -1,0 +1,28 @@
+(12) Integracao com Banco de Dados SQL
+
+Aula01 - Apresentação do módulo
+Aula02 - Criando um banco de dados (SQLite)
+Aula03 - Criando uma tabela (SQLite)
+Aula04 - Inserindo dados na tabela (SQLite)
+Aula05 - Lendo dados de uma tabela (SQLite)
+Aula06 - Atualizando e removendo dados de uma tabela (SQLite)
+Aula07 - Exercício: Sistema de suporte técnico
+Aula08 - Resolução: Sistema de suporte técnico
+Aula09 - Criando um banco de dados (PostgreSQL)
+Aula10 - Criando a tabela e inserindo dados (PostgreSQL)
+Aula11 - Lendo dados de uma tabela (PostgreSQL)
+Aula12 - Atualizando e removendo dados de uma tabela (PostgreSQL)
+Aula13 - Exercício: Catálogo de cursos
+Aula14 - Resolução: Catálogo de cursos
+Aula15 - O que é um ORM?
+Aula16 - Fundamentos e conexão - SQLAlchemy
+Aula17 - Mapeamento Declarativo com Type Hints
+Aula18 - Gerenciamento de Sessões
+Aula19 - Lendo dados de uma tabela
+Aula20 - Relacionamentos e sincronização
+Aula21 - Manipulação de dados
+Aula22 - Exercício: Sistema de pedidos
+Aula23 - Resolução: Sistema de pedidos
+Aula24 - Assincronicidade no Python
+Aula25 - Utilizando o SQLAlchemy de forma assíncrona
+Aula26 - Tópicos avançados
