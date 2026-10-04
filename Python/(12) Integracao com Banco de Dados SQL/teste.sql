@@ -8,3 +8,6 @@ CREATE TABLE IF NOT EXISTS chamados(
    prioridade TEXT NOT NULL CHECK (prioridade IN ('BAIXA', 'MEDIA', 'ALTA')),
    status TEXT NOT NULL CHECK (status IN ('ABERTO', 'EM_AMDAMENTO', 'CONCLUIDO'))
 );
+
+INSERT INTO chamados  (cliente, descricao, prioridade) 
+   VALUES () 
