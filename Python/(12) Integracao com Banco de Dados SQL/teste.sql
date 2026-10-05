@@ -9,5 +9,9 @@ CREATE TABLE IF NOT EXISTS chamados(
    status TEXT NOT NULL CHECK (status IN ('ABERTO', 'EM_AMDAMENTO', 'CONCLUIDO'))
 );
 
-INSERT INTO chamados  (cliente, descricao, prioridade) 
-   VALUES () 
+INSERT INTO chamados (cliente, descricao, prioridade) 
+   VALUES (?, ?, ?);
+
+UPDATE chamados SET status = ? WHERE id = ?
+
+SELECT * FROM chamados WHERE status = 'ABERTO'
