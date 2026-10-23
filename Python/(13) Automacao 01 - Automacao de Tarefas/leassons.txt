@@ -1,0 +1,43 @@
+(13) Automacoes 01 -Automacoes de Tarefas
+
+Aula-01 - Apresentação do Módulo
+Aula-02 - Ideias de Automação no SO
+Aula-03 - Utilizando o Pathlib
+Aula-04 - Adicionando prefixo no nome de arquivo
+Aula-05 - Renomeando arquivos de acordo com a pasta
+Aula-06 - Adicionando informação da data no arquivo I
+Aula-07 - Adicionando informação da data no arquivo II
+Aula-08 - Exercício 1 - Organização de pastas de acordo com o arquivo
+Aula-09 - Resolução 1 - Organização de pastas de acordo com o arquivo
+Aula-10 - Agendamento de Tarefas
+Aula-11 - Ideias de Automação com E-mails
+Aula-12 - Enviando E-mails com o Python
+Aula-13 - Enviando E-mails com a Mensagem a partir de Arquivo Txt
+Aula-14 - Enviando E-mails com a Mensagem a partir de Arquivo HTML e co...
+Aula-15 - Envio de E-mails com informações de ações
+Aula-16 - Ideias para Automação com Planilhas
+Aula-17 - Criando a Primeira Planilha
+Aula-18 - Lendo Dados de uma Planilha
+Aula-19 - Criando uma Planilha a partir de Arquivo de Texto
+Aula-20 - Utilizando Operações em Planilhas
+Aula-21 - Juntando Planilhas
+Aula-22 - Criando Gráficos
+Aula-23 - Criando um Dicionário com dados de duas Planilhas
+Aula-24 - Criando Gráfico a partir de duas planilhas
+Aula-25 - Ideias de Automação com PDF
+Aula-26 - Trabalhando com PDF
+Aula-27 - Separando PDFs por Número de Páginas Dinamicamente
+Aula-28 - Unindo PDFs
+Aula-29 - Rotacionando PDFs
+Aula-30 - Extraindo Imagens para PDF
+Aula-31 - Convertendo Imagem em PDF
+Aula-32 - Ideias de Automação em Interface Gráfica
+Aula-33 - Overview PyAutoGui
+Aula-34 - Automatizando o Mouse
+Aula-35 - Automatizando o Teclado
+Aula-36 - Automatizando Screenshots
+Aula-37 - Analisando desempenho do Ibovespa
+Aula-38 - Acessando um canal específico no Youtube
+Aula-39 - Projeto Cadastro Automático de Alunos I
+Aula-40 - Projeto Cadastro Automático de Alunos II
+Aula-41 - Encerramento
