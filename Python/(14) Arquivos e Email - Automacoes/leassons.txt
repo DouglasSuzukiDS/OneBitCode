@@ -1,0 +1,14 @@
+(14) Arquivos e Email - Automacoes
+
+Aula01 - Apresentação do módulo
+Aula02 - Manipulando diretórios
+Aula03 - Manipulando arquivos
+Aula04 - Monitoramento de pastas em tempo real
+Aula05 - Lendo arquivos XML
+Aula06 - Manipulando datas
+Aula07 - Enviando e-mails com Python
+Aula08 - E-mails com HTML e anexos
+Aula09 - Extração de Texto com OCR
+Aula10 - Empacotando seus scripts
+Aula11 - Exercício: Newsletter de mídias
+Aula12 - Resolução: Newsletter de mídias
